@@ -21,7 +21,8 @@ const get = (req, res) => {
     },
     {
       id: 20,
-      imageurl: "http://cdn.bajajelectronics.com/product/7375-1.png",
+      imageurl:
+        "https://img.giznext.com/assets/model/4/3356/xiaomi-redmi-note-10s-b1961bce297cf92ff7b0a6c22aab8e.jpg",
       name: "Redmi Note 10S",
       description: " ",
       category: "Mobile",
