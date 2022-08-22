@@ -1,4 +1,4 @@
-const CardsData = [
+[
   {
     id: 1,
     imageurl:
@@ -358,4 +358,3 @@ const CardsData = [
     price: 38000,
   },
 ];
-export default CardsData;
