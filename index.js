@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mobile = require("./Route/Mobile");
+const laptop = require("./Route/Laptop");
 const data = require("./Details/CardsData");
 const data1 = require("./Details/mobile.json");
 
@@ -15,13 +16,10 @@ app.use(
 app.get("/", (req, res) => {
   res.send("Hello E-commerce");
 });
-app.get("/data", (req, res) => {
-  res.send(data);
-});
-app.get("/data1", (req, res) => {
+app.get("/api", (req, res) => {
   res.send(data1);
 });
-
+app.use("/", laptop);
 app.use("/api", mobile);
 
 app.listen(port, () => {
