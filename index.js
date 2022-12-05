@@ -15,12 +15,12 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send("Hello E-commerce");
+  res.send(" <h2>Welcome to E-commerce Data </h2>");
 });
 
 app.use("/", laptop);
 app.use("/", myData);
-app.use("/api", mobile);
+app.use("/", mobile);
 
 app.listen(port, () => {
   console.log(`app is running ${port}`);
